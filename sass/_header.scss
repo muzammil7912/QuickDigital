@@ -1,0 +1,33 @@
+.header {
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    &__left, &__right{
+        ul {
+            gap: 3rem;
+             a{
+                font-size: 1.6rem;
+                color: #fff;
+             }
+        }
+    } 
+    &__center {
+        padding: 0 3rem;
+        &--right {
+            h1 {
+                font-size: 3.9rem;
+                font-family: 'Chillax-Semibold';
+                color: #fff;
+                span {
+                    color: $primary-color;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+    .socialIcon {
+        position: absolute;
+        right: 2%;
+    }
+}
