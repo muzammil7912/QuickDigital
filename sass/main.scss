@@ -13,8 +13,93 @@
 @import "./animation";
 @import "./loader";
 @import "./header";
-.bannner {
+.banner {
     position: relative;
+    .main1 {
+        background: $secondary-color;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover
+    }
+    .main2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40%;
+        height: 100vh;
+        object-fit: contain;
+        object-position: center;
+    }
+    &Txt {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        left: 10%;
+        width: 40%;
+        h2 {
+            color: #fff;
+            font-size: 6rem;
+            font-weight: 800;
+            span {
+                color: $primary-color;
+            }
+        }
+        &_2 {
+            margin: 3rem 0 5rem;
+            padding-left: 5rem;
+            li {
+                gap: 2rem;
+                img {
+                    object-fit: contain;
+                }
+                span {
+                    font-size: 1.7rem;
+                    font-style: italic;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    &Txt2 {
+        position: absolute;
+        z-index: 3;
+        background: rgba(217, 217, 217, 0.08);
+        border-radius: 2rem;
+        bottom: 10%;
+        right: 10%;
+        width: 40%;
+        color: #fff;
+        padding: 1rem;
+        &__left {
+            position: relative;
+            left: -3rem;
+        }
+        &__right {
+        }
+        h3 {
+            font-size: 1.6rem;
+            font-size: 500;
+        }
+        span {
+            width: 1.4rem;
+            position: relative;
+            background: linear-gradient(180deg, #EB5939 0%, #F3A157 100%), linear-gradient(180deg, #EB5939 55.7%, #FE980E 100%, #FE980E 100%);
+            /* border: 4px solid; */
+            /* border-image-source: linear-gradient(180deg, #EB5939 0%, #F3A157 100%); */
+            height: 40px;
+            display: block;
+            margin-right: 0.7rem;
+            border-radius: 1rem;
+        }
+        p {
+            display: flex;
+            font-size: 1rem;
+        }
+        .bannerTxt2img {
+            align-self: flex-end
+        }
+    }
 }
 @import "./footer";
 @import "./innerPage";

@@ -74,7 +74,7 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar {
   width: 0.6rem;
-  background-color: #333133;
+  background-color: #000000;
 }
 
 h1,
@@ -130,6 +130,18 @@ a:hover {
 
 img {
   vertical-align: middle;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify_center {
+  justify-content: center;
 }
 
 .grid {
@@ -239,6 +251,18 @@ img {
   text-transform: uppercase;
 }
 
+.btn {
+  background: linear-gradient(180deg, #EB5939 0%, #F3A157 100%), linear-gradient(180deg, #EB5939 55.7%, #FE980E 100%, #FE980E 100%);
+  color: #fff;
+  border-radius: 3rem;
+  padding: 10px 30px 10px 30px;
+  font-size: 2rem;
+  color: #fff;
+}
+.btn:hover {
+  color: #fff;
+}
+
 .media {
   display: flex;
   justify-content: center;
@@ -259,6 +283,8 @@ img {
   position: absolute;
   left: 0;
   right: 0;
+  z-index: 2;
+  padding: 1rem 0;
 }
 .header__left ul, .header__right ul {
   gap: 3rem;
@@ -284,6 +310,93 @@ img {
   right: 2%;
 }
 
-.bannner {
+.banner {
   position: relative;
+}
+.banner .main1 {
+  background: #000000;
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner .main2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+.bannerTxt {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  left: 10%;
+  width: 40%;
+}
+.bannerTxt h2 {
+  color: #fff;
+  font-size: 6rem;
+  font-weight: 800;
+}
+.bannerTxt h2 span {
+  color: #EB5939;
+}
+.bannerTxt_2 {
+  margin: 3rem 0 5rem;
+  padding-left: 5rem;
+}
+.bannerTxt_2 li {
+  gap: 2rem;
+}
+.bannerTxt_2 li img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.bannerTxt_2 li span {
+  font-size: 1.7rem;
+  font-style: italic;
+  color: #fff;
+}
+.bannerTxt2 {
+  position: absolute;
+  z-index: 3;
+  background: rgba(217, 217, 217, 0.08);
+  border-radius: 2rem;
+  bottom: 10%;
+  right: 10%;
+  width: 40%;
+  color: #fff;
+  padding: 1rem;
+}
+.bannerTxt2__left {
+  position: relative;
+  left: -3rem;
+}
+.bannerTxt2 h3 {
+  font-size: 1.6rem;
+  font-size: 500;
+}
+.bannerTxt2 span {
+  width: 1.4rem;
+  position: relative;
+  background: linear-gradient(180deg, #EB5939 0%, #F3A157 100%), linear-gradient(180deg, #EB5939 55.7%, #FE980E 100%, #FE980E 100%);
+  /* border: 4px solid; */
+  /* border-image-source: linear-gradient(180deg, #EB5939 0%, #F3A157 100%); */
+  height: 40px;
+  display: block;
+  margin-right: 0.7rem;
+  border-radius: 1rem;
+}
+.bannerTxt2 p {
+  display: flex;
+  font-size: 1rem;
+}
+.bannerTxt2 .bannerTxt2img {
+  align-self: flex-end;
 }/*# sourceMappingURL=main.css.map */
