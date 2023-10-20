@@ -1,0 +1,190 @@
+.aboutBanner {
+    background: #000;
+    &img {
+        position: relative;
+        max-width: 100%;
+        min-height: 100vh;
+    }
+    &_ {
+        position: absolute;
+        top: 55%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        &_left {
+            width: 50%;
+            h2 {
+                font-size: 7rem;
+            }
+            color: #fff;
+            p {
+                font-size: 1.7rem;
+                font-style: italic;
+            }
+        }
+        &_right {
+            background: #D9D9D914;
+            padding: 4rem 3rem;
+            h3 {
+                color: #fff;
+                font-size: 3.4rem;
+                font-weight: 500;
+            }
+            .quoteBox {
+                input {
+                    width: 100%;
+                    padding: 1rem;
+                    background: transparent;
+                    border: 2px solid transparent;
+                    border-bottom-color: #282828;
+                    margin-bottom: 1rem;
+                    outline: #282828;
+                    color: #fff;
+                }
+            }
+            .btn {
+                margin-top: 3rem;
+            }
+        }
+    }
+}
+
+.sectionabout {
+    position: relative;
+    padding: 6rem 0;
+    .block__inner {
+        position: relative;
+        z-index: 2;
+    }
+    &h {
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+        h4 {
+            font-size: 6rem;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 1.4rem;
+        }
+    }
+    .textback {
+        position: absolute;
+        left: 8rem;
+        top: -7rem;
+        font-size: 10rem;
+        z-index: -2;
+        color: #f7f7f7;
+        text-transform: uppercase;
+        text-wrap: nowrap;
+        font-weight: 400;
+        line-height: 1;
+    }
+    .imageback {
+        position: absolute;
+        left: 0;
+        top: 15rem;
+        img {
+            max-width: 100%;
+        }
+    }
+    &Box {
+        display: flex;
+        border: 1px solid #ddd;
+        background: #fff;
+        border-radius: .5rem;
+        padding: 1rem 5rem;
+        align-items: center;
+        margin: 12rem 0;
+        h6 {
+            width: 40rem;
+            font-size: 3rem;
+        }
+        p {
+            font-size: 1.4rem;
+        }
+        &2 {
+            h2 {
+                font-size: 3.6rem;
+            }
+            &_ {
+                gap: 4rem;
+                display: flex;
+                ul {
+                    list-style: none;
+                    li {
+                        position: relative;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            left: -30px;
+                            top: 0px;
+                            // transform: translateY(-50%);
+                            background: url(../webImages/111.png) no-repeat;
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.portfolioBanner {
+    background: #000 url(../webImages/banner/banner3.png) no-repeat;
+    background-size: cover;
+    padding: 8rem 4rem;
+    color: #fff;
+    text-align: center;
+    &text {
+        .humber {
+            text-align: left;
+            display: flex;
+            list-style: none;
+            gap: 1rem;
+            align-items: center;
+            li {
+                color: #fff;
+                a,
+                span {
+                    color: #6B6B6B;
+                }
+            }
+        }
+        width: 60%;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 5rem;
+    }
+    h1 {
+        text-transform: uppercase;
+    }
+    p {
+        font-style: italic;
+    }
+}
+
+.sectionbebek {
+    img {
+        width: 100%;
+    }
+}
+
+.mySwiper3 {
+    display: none;
+}
+
+@media screen and (max-width: 979px) {
+    .mySwiper3 {
+        display: block;
+    }
+    .mySwipercc {
+        display: none;
+    }
+}

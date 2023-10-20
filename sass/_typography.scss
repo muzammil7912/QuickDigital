@@ -1,153 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 @font-face {
     font-family: 'Chillax-Variable';
-    src: url('../css/fonts/Chillax-Variable.woff2') format('woff2'),
-         url('../css/fonts/Chillax-Variable.woff') format('woff'),
-         url('../css/fonts/Chillax-Variable.ttf') format('truetype');
-         font-weight: 200 700;
-         font-style: normal;
-  }
-  
-  
-  @font-face {
+    src: url('../css/fonts/Chillax-Variable.woff2') format('woff2'), url('../css/fonts/Chillax-Variable.woff') format('woff'), url('../css/fonts/Chillax-Variable.ttf') format('truetype');
+    font-weight: 200 700;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Chillax-Extralight';
-    src: url('../css/fonts/Chillax-Extralight.woff2') format('woff2'),
-         url('../css/fonts/Chillax-Extralight.woff') format('woff'),
-         url('../css/fonts/Chillax-Extralight.ttf') format('truetype');
-         font-weight: 200;
-         font-style: normal;
-  }
-  
-  
-  @font-face {
+    src: url('../css/fonts/Chillax-Extralight.woff2') format('woff2'), url('../css/fonts/Chillax-Extralight.woff') format('woff'), url('../css/fonts/Chillax-Extralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Chillax-Light';
-    src: url('../css/fonts/Chillax-Light.woff2') format('woff2'),
-         url('../css/fonts/Chillax-Light.woff') format('woff'),
-         url('../css/fonts/Chillax-Light.ttf') format('truetype');
-         font-weight: 300;
-         font-style: normal;
-  }
-  
-  
-  @font-face {
+    src: url('../css/fonts/Chillax-Light.woff2') format('woff2'), url('../css/fonts/Chillax-Light.woff') format('woff'), url('../css/fonts/Chillax-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Chillax-Regular';
-    src: url('../css/fonts/Chillax-Regular.woff2') format('woff2'),
-         url('../css/fonts/Chillax-Regular.woff') format('woff'),
-         url('../css/fonts/Chillax-Regular.ttf') format('truetype');
-         font-weight: 400;
-         font-style: normal;
-  }
-  
-  
-  @font-face {
+    src: url('../css/fonts/Chillax-Regular.woff2') format('woff2'), url('../css/fonts/Chillax-Regular.woff') format('woff'), url('../css/fonts/Chillax-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Chillax-Medium';
-    src: url('../css/fonts/Chillax-Medium.woff2') format('woff2'),
-         url('../css/fonts/Chillax-Medium.woff') format('woff'),
-         url('../css/fonts/Chillax-Medium.ttf') format('truetype');
-         font-weight: 500;
-         font-style: normal;
-  }
-  
-  
-  @font-face {
+    src: url('../css/fonts/Chillax-Medium.woff2') format('woff2'), url('../css/fonts/Chillax-Medium.woff') format('woff'), url('../css/fonts/Chillax-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Chillax-Semibold';
-    src: url('../css/fonts/Chillax-Semibold.woff2') format('woff2'),
-         url('../css/fonts/Chillax-Semibold.woff') format('woff'),
-         url('../css/fonts/Chillax-Semibold.ttf') format('truetype');
-         font-weight: 600;
-         font-style: normal;
-  }
-  
-  
-  @font-face {
+    src: url('../css/fonts/Chillax-Semibold.woff2') format('woff2'), url('../css/fonts/Chillax-Semibold.woff') format('woff'), url('../css/fonts/Chillax-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Chillax-Bold';
-    src: url('../css/fonts/Chillax-Bold.woff2') format('woff2'),
-         url('../css/fonts/Chillax-Bold.woff') format('woff'),
-         url('../css/fonts/Chillax-Bold.ttf') format('truetype');
-         font-weight: 700;
-         font-style: normal;
-  }
+    src: url('../css/fonts/Chillax-Bold.woff2') format('woff2'), url('../css/fonts/Chillax-Bold.woff') format('woff'), url('../css/fonts/Chillax-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
 
-
-  @font-face {
+@font-face {
     font-family: 'ClashDisplay-Variable';
-    src: url('../css/fonts/ClashDisplay-Variable.woff2') format('woff2'),
-         url('../css/fonts/ClashDisplay-Variable.woff') format('woff'),
-         url('../css/fonts/ClashDisplay-Variable.ttf') format('truetype');
-         font-weight: 200 700;
-         font-display: swap;
-         font-style: normal;
-  }
-  
-  
-  @font-face {
+    src: url('../css/fonts/ClashDisplay-Variable.woff2') format('woff2'), url('../css/fonts/ClashDisplay-Variable.woff') format('woff'), url('../css/fonts/ClashDisplay-Variable.ttf') format('truetype');
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'ClashDisplay-Extralight';
-    src: url('../css/fonts/ClashDisplay-Extralight.woff2') format('woff2'),
-         url('../css/fonts/ClashDisplay-Extralight.woff') format('woff'),
-         url('../css/fonts/ClashDisplay-Extralight.ttf') format('truetype');
-         font-weight: 200;
-         font-display: swap;
-         font-style: normal;
-  }
-  
-  
-  @font-face {
+    src: url('../css/fonts/ClashDisplay-Extralight.woff2') format('woff2'), url('../css/fonts/ClashDisplay-Extralight.woff') format('woff'), url('../css/fonts/ClashDisplay-Extralight.ttf') format('truetype');
+    font-weight: 200;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'ClashDisplay-Light';
-    src: url('../css/fonts/ClashDisplay-Light.woff2') format('woff2'),
-         url('../css/fonts/ClashDisplay-Light.woff') format('woff'),
-         url('../css/fonts/ClashDisplay-Light.ttf') format('truetype');
-         font-weight: 300;
-         font-display: swap;
-         font-style: normal;
-  }
-  
-  
-  @font-face {
+    src: url('../css/fonts/ClashDisplay-Light.woff2') format('woff2'), url('../css/fonts/ClashDisplay-Light.woff') format('woff'), url('../css/fonts/ClashDisplay-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'ClashDisplay-Regular';
-    src: url('../css/fonts/ClashDisplay-Regular.woff2') format('woff2'),
-         url('../css/fonts/ClashDisplay-Regular.woff') format('woff'),
-         url('../css/fonts/ClashDisplay-Regular.ttf') format('truetype');
-         font-weight: 400;
-         font-display: swap;
-         font-style: normal;
-  }
-  
-  
-  @font-face {
+    src: url('../css/fonts/ClashDisplay-Regular.woff2') format('woff2'), url('../css/fonts/ClashDisplay-Regular.woff') format('woff'), url('../css/fonts/ClashDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'ClashDisplay-Medium';
-    src: url('../css/fonts/ClashDisplay-Medium.woff2') format('woff2'),
-         url('../css/fonts/ClashDisplay-Medium.woff') format('woff'),
-         url('../css/fonts/ClashDisplay-Medium.ttf') format('truetype');
-         font-weight: 500;
-         font-display: swap;
-         font-style: normal;
-  }
-  
-  
-  @font-face {
+    src: url('../css/fonts/ClashDisplay-Medium.woff2') format('woff2'), url('../css/fonts/ClashDisplay-Medium.woff') format('woff'), url('../css/fonts/ClashDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'ClashDisplay-Semibold';
-    src: url('../css/fonts/ClashDisplay-Semibold.woff2') format('woff2'),
-         url('../css/fonts/ClashDisplay-Semibold.woff') format('woff'),
-         url('../css/fonts/ClashDisplay-Semibold.ttf') format('truetype');
-         font-weight: 600;
-         font-display: swap;
-         font-style: normal;
-  }
-  
-  
-  @font-face {
+    src: url('../css/fonts/ClashDisplay-Semibold.woff2') format('woff2'), url('../css/fonts/ClashDisplay-Semibold.woff') format('woff'), url('../css/fonts/ClashDisplay-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'ClashDisplay-Bold';
-    src: url('../css/fonts/ClashDisplay-Bold.woff2') format('woff2'),
-         url('../css/fonts/ClashDisplay-Bold.woff') format('woff'),
-         url('../css/fonts/ClashDisplay-Bold.ttf') format('truetype');
-         font-weight: 700;
-         font-display: swap;
-         font-style: normal;
-  }
-  
-  
-  
-  
+    src: url('../css/fonts/ClashDisplay-Bold.woff2') format('woff2'), url('../css/fonts/ClashDisplay-Bold.woff') format('woff'), url('../css/fonts/ClashDisplay-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+
 /* ------------------Typography------------------ */
 
 html {
@@ -156,7 +113,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: $font-color;
     font-size: 1.4rem;
     overflow-x: hidden;
@@ -180,13 +137,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.2;
     margin: 1rem 0;
 }
 
 h1 {
-  font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 6rem;
 }
 
@@ -218,7 +175,7 @@ p {
 
 a {
     text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: $font-color;
     &:hover {
         text-decoration: none;
@@ -232,9 +189,15 @@ img {
 .d-flex {
     display: flex;
 }
+
 .align-items-center {
     align-items: center;
 }
+
 .justify_center {
     justify-content: center;
+}
+
+.w-100 {
+    width: 100%;
 }
