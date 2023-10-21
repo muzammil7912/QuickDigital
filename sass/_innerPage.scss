@@ -499,6 +499,70 @@
     }
 }
 
+.sectionbebek2 {
+    padding: 4rem 0;
+    background: url(../webImages/bebek/image4.png) no-repeat;
+    background-size: 100%;
+    &Top {
+        justify-content: space-between;
+        align-items: center;
+        b {
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+        img {
+            width: 20rem;
+        }
+    }
+    &Center {
+        width: 55%;
+        margin: 0 auto;
+        p {
+            font-weight: 600;
+            font-size: 3.5rem;
+            font-family: 'Chakra Petch', sans-serif;
+            text-align: center;
+        }
+    }
+    &Center2 {
+        position: relative;
+        width: 55%;
+        margin: 0 auto;
+        img {
+            width: 100%;
+        }
+        span {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            font-weight: 800;
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 7rem;
+            text-transform: uppercase;
+            line-height: 0.8;
+            text-align: center;
+        }
+    }
+    &Center3 {
+        position: relative;
+        width: 55%;
+        margin: 0 auto;
+        .img1 {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: -14rem;
+            display: block;
+        }
+        .img2 {
+            width: 10rem;
+            position: absolute;
+            bottom: 1rem;
+            left: 30rem;
+        }
+    }
+}
+
 .mySwiper3 {
     display: none;
 }
