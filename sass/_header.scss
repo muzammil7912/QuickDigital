@@ -4,6 +4,11 @@
     right: 0;
     z-index: 2;
     padding: 1rem 0;
+    &.headerBlack {
+        position: relative;
+        background: #000 url(../webImages/banner/banner3.png) no-repeat;
+        background-size: cover;
+    }
     &__left,
     &__right {
         ul {
@@ -36,7 +41,7 @@
                 left: 0;
                 top: 0;
                 inset: 0;
-                background: rgb(217 217 217 / 28%);
+                background: rgb(82 82 82);
                 filter: blur(6px);
                 box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
             }
@@ -99,13 +104,23 @@
     }
     li {
         padding: 1rem 0;
-        &:hover .header__right-dropdown {
+        &:hover .header__right-dropdown,
+        &.active .header__right-dropdown {
             transform: scaleY(1);
         }
     }
     .socialIcon {
         position: absolute;
         right: 2%;
+        a {
+            transition: .3s;
+            img {
+                transition: .3s;
+            }
+            &:hover img {
+                transform: rotate(360deg);
+            }
+        }
     }
     &topimg {
         position: absolute;
@@ -136,7 +151,7 @@
             display: none;
         }
         &__right {
-            ul {
+            &>ul {
                 position: fixed;
                 width: 30rem;
                 background: #fff;
@@ -163,6 +178,26 @@
             &-nav {
                 display: block;
             }
+        }
+    }
+    .header__right-dropdown {
+        flex-direction: column;
+        top: -5px;
+        right: -90%;
+        left: auto;
+        height: 98vh;
+        overflow: auto;
+        background: #000;
+        &::before {
+            display: none;
+        }
+        &-Box:first-child {
+            border-left: 2px solid #EB5939;
+        }
+    }
+    .header__right {
+        &>ul ul li a {
+            color: #fff;
         }
     }
 }

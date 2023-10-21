@@ -3,32 +3,29 @@
     background: #000;
     color: #fff;
     padding: 5rem 0;
- .img1 {
+    .img1 {
         position: absolute;
         top: -8rem;
         left: 10%;
     }
-    &__heading{
+    &__heading {
         padding: 0 0 4rem;
         margin-bottom: 6rem;
         border-bottom: 2px solid rgba(255, 255, 255, 1);
-
     }
     h2 {
         text-align: center;
         font-size: 11rem;
         line-height: .9;
         text-transform: uppercase;
-
         span {
             background: linear-gradient(180deg, #EB5939 0%, #F3A157 100%), linear-gradient(180deg, #EB5939 55.7%, #FE980E 100%, #FE980E 100%);
-            -webkit-background-clip: text; /* Safari/Chrome */
+            -webkit-background-clip: text;
+            /* Safari/Chrome */
             background-clip: text;
-            color: transparent; /* Text color will be transparent */
-box-shadow: 0px 0px 0px 0px rgba(248, 131, 27, 0.25);
-
-
-
+            color: transparent;
+            /* Text color will be transparent */
+            box-shadow: 0px 0px 0px 0px rgba(248, 131, 27, 0.25);
         }
     }
     &Main {
@@ -43,7 +40,7 @@ box-shadow: 0px 0px 0px 0px rgba(248, 131, 27, 0.25);
                     font-size: 4rem;
                     font-weight: 400;
                 }
-                p{
+                p {
                     font-size: 1.8rem;
                 }
             }
@@ -51,10 +48,14 @@ box-shadow: 0px 0px 0px 0px rgba(248, 131, 27, 0.25);
                 a {
                     display: block;
                     margin-bottom: 1rem;
+                    transition: .3s;
+                    &:hover {
+                        color: $primary-color;
+                    }
                 }
             }
             li {
-                a{
+                a {
                     color: #fff;
                 }
             }
@@ -66,22 +67,20 @@ box-shadow: 0px 0px 0px 0px rgba(248, 131, 27, 0.25);
                     border-radius: 3rem;
                     border: 1px solid #fff;
                     margin-left: auto;
-
                     &2 {
                         display: flex;
                         align-items: center;
                         justify-content: flex-end;
                         margin-top: 1rem;
                         a {
-                            background: linear-gradient(180deg, #EB5939 0%, #F3A157 100%),
-                            linear-gradient(180deg, #EB5939 55.7%, #FE980E 100%, #FE980E 100%);
-                            -webkit-background-clip: text; /* Safari/Chrome */
+                            background: linear-gradient(180deg, #EB5939 0%, #F3A157 100%), linear-gradient(180deg, #EB5939 55.7%, #FE980E 100%, #FE980E 100%);
+                            -webkit-background-clip: text;
+                            /* Safari/Chrome */
                             background-clip: text;
-                            color: transparent; /* Text color will be transparent */
-                            
+                            color: transparent;
+                            /* Text color will be transparent */
                         }
                     }
-                  
                 }
                 h5 {
                     font-size: 1rem;
@@ -112,30 +111,33 @@ box-shadow: 0px 0px 0px 0px rgba(248, 131, 27, 0.25);
     right: 0;
     margin: 0 auto;
     justify-content: center;
-.footeref{
-
-    position: relative;
-    display: block;
-    width: 2rem;
-    height: 2rem;
-    clip-path: polygon(0 50%, 100% 100%, 100% 0);
-    background: rgb(255, 249, 244);
-}
-.footeres{
-
-    position: relative;
-    display: block;
-    width: 2rem;
-    height: 2rem;
-    clip-path: polygon(100% 50%, 0 0, 0 100%);
-    background: rgb(255, 249, 244);
-}
+    .footeref {
+        position: relative;
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        clip-path: polygon(0 50%, 100% 100%, 100% 0);
+        background: rgb(255, 249, 244);
+    }
+    .footeres {
+        position: relative;
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        clip-path: polygon(100% 50%, 0 0, 0 100%);
+        background: rgb(255, 249, 244);
+    }
 }
 
-
+.drakfoo {
+    .footeref,
+    .footeres {
+        background: #141414;
+    }
+}
 
 @media screen and (max-width: 979px) {
-    .footer  {
+    .footer {
         .img1 {
             left: auto;
             right: 0%;
@@ -151,11 +153,11 @@ box-shadow: 0px 0px 0px 0px rgba(248, 131, 27, 0.25);
         }
         &Main {
             grid-template-columns: 1fr;
-            &Box{
-                &s{
+            &Box {
+                &s {
                     img {
-                    width: 3rem;
-                    margin-left: 2rem;
+                        width: 3rem;
+                        margin-left: 2rem;
                     }
                 }
                 &last {

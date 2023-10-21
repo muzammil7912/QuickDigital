@@ -1,0 +1,143 @@
+@media screen and (max-width: 979px) {
+    .section7Main {
+        &.dblo {
+            display: none;
+        }
+        &.d-none {
+            display: block;
+        }
+    }
+    .section5Main {
+        &M {
+            display: none;
+        }
+        &Swiper {
+            display: block;
+        }
+        &Bottom {
+            display: block;
+        }
+    }
+    .aboutBanner {
+        &_ {
+            flex-direction: column;
+            gap: 0;
+            &_left {
+                width: 100%;
+                text-align: center;
+                img {
+                    display: none;
+                }
+                br {
+                    display: none;
+                }
+            }
+            &_right {
+                display: none;
+            }
+        }
+    }
+    .sectionabout {
+        .imageback {
+            display: none;
+        }
+        &h h4 {
+            font-size: 3rem;
+        }
+        &Box {
+            flex-direction: column;
+        }
+        &Box2 {
+            &_ {
+                flex-direction: column;
+                &_right {
+                    order: 1 !important;
+                    img {
+                        max-width: 100%;
+                    }
+                }
+                &_left {
+                    order: 2 !important;
+                }
+            }
+        }
+    }
+    .portfolioBanner {
+        &text {
+            width: 100%;
+            h1 {
+                font-size: 4rem;
+            }
+        }
+    }
+    .sectionContact {
+        &_ {
+            flex-direction: column;
+            &_left {
+                width: 100%;
+            }
+            &_right {
+                width: 100%;
+            }
+        }
+    }
+    .blogInner {
+        &Main {
+            grid-template-columns: 1fr;
+            &Left {
+                order: 2;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sectionBLogMain {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 461px) {
+    .header__right>ul {
+        width: 15rem;
+    }
+    .header__right-dropdown {
+        right: -145%;
+        width: 219px;
+        background: #000;
+    }
+    .portfolioBannertext {
+        width: 100%;
+        h1 {
+            font-size: 4rem;
+        }
+    }
+    .sectionBLog {
+        &Main {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .moreCOntant {
+            position: absolute;
+            bottom: -11rem;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: -moz-fit-content;
+            width: fit-content;
+        }
+    }
+    .sectionSEO {
+        &Main {
+            &_ {
+                &top {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+                &bottom {
+                    &_ {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -220,11 +220,17 @@
         top: 30%;
         left: 3rem;
         width: 6.8rem;
+        img {
+            animation: rotate 5s linear infinite;
+        }
         &2 {
             position: absolute;
             bottom: 2%;
             right: 6rem;
             width: 3rem;
+            img {
+                animation: rotate 5s linear infinite;
+            }
         }
         &3 {
             position: absolute;
@@ -296,6 +302,11 @@
                 color: rgba(48, 48, 48, 1);
                 font-weight: 400;
                 line-height: 0.8;
+            }
+            ul {
+                li {
+                    margin: 1rem 0;
+                }
             }
         }
     }
@@ -421,6 +432,12 @@
     }
     &Main {
         columns: 2;
+        &Swiper {
+            display: none;
+        }
+        &Bottom {
+            display: none;
+        }
         &B {
             h4 {
                 position: relative;
@@ -622,6 +639,9 @@
     }
     &Main {
         margin-top: 3rem;
+        &.d-none {
+            display: none;
+        }
         .swiper-wrapper2 {
             display: flex;
             flex-wrap: wrap;
@@ -692,10 +712,15 @@
 }
 
 .section8 {
+    position: relative;
     padding: 2rem 0;
     background: linear-gradient(180deg, #EB5939 55.7%, #FE980E 100%, #FE980E 100%);
     img {
         width: 100%;
+        transition: .3s;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 }
 
@@ -1202,6 +1227,8 @@
         }
     }
     .section7 {
+        position: relative;
+        z-index: 2;
         &_top {
             h2 {
                 font-size: 4rem;
@@ -1325,3 +1352,4 @@
 
 @import "./footer";
 @import "./innerPage";
+@import "./responsive";
