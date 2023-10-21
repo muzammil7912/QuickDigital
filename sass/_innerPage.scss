@@ -176,6 +176,83 @@
     }
 }
 
+.sectionContact {
+    padding: 8rem 0;
+    h6 {
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    h3 {
+        font-weight: 500;
+        font-size: 4.4rem;
+        text-transform: uppercase;
+    }
+    &_ {
+        display: flex;
+        gap: 2rem;
+        form {
+            .flexBox {
+                gap: 1rem;
+            }
+        }
+        &_input {
+            position: relative;
+            gap: 1rem;
+            width: 100%;
+            margin: 2rem 0;
+            input,
+            select,
+            textarea {
+                width: 100%;
+                height: 4rem;
+                padding-top: 1rem;
+                padding-left: 1rem;
+                font-size: 1.6rem;
+                border: none;
+                border-bottom: 1px solid #c9c9c9;
+                color: #484848;
+                outline: #484848;
+                background: transparent;
+            }
+            textarea {
+                padding-top: 2rem;
+                height: 10rem;
+            }
+            label {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 4%;
+                transition: .3s;
+                font-weight: 500;
+                color: #000;
+                z-index: -1;
+            }
+             ::placeholder {
+                color: #fff;
+            }
+            input:focus+label,
+            input:not(:placeholder-shown)+label {
+                top: 0%;
+                font-size: 1.2rem;
+                left: 0;
+            }
+        }
+        &_left {
+            width: 70%;
+        }
+        &_right {
+            width: 30%;
+            iframe {
+                height: 100%;
+                width: 100%;
+                border: transparent;
+                border-radius: 2rem;
+            }
+        }
+    }
+}
+
 .mySwiper3 {
     display: none;
 }

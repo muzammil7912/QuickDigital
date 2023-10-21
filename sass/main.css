@@ -2062,6 +2062,89 @@ img {
   width: 100%;
 }
 
+.sectionContact {
+  padding: 8rem 0;
+}
+.sectionContact h6 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.sectionContact h3 {
+  font-weight: 500;
+  font-size: 4.4rem;
+  text-transform: uppercase;
+}
+.sectionContact_ {
+  display: flex;
+  gap: 2rem;
+}
+.sectionContact_ form .flexBox {
+  gap: 1rem;
+}
+.sectionContact__input {
+  position: relative;
+  gap: 1rem;
+  width: 100%;
+  margin: 2rem 0;
+}
+.sectionContact__input input,
+.sectionContact__input select,
+.sectionContact__input textarea {
+  width: 100%;
+  height: 4rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  font-size: 1.6rem;
+  border: none;
+  border-bottom: 1px solid #c9c9c9;
+  color: #484848;
+  outline: #484848;
+  background: transparent;
+}
+.sectionContact__input textarea {
+  padding-top: 2rem;
+  height: 10rem;
+}
+.sectionContact__input label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 4%;
+  transition: 0.3s;
+  font-weight: 500;
+  color: #000;
+  z-index: -1;
+}
+.sectionContact__input ::-moz-placeholder {
+  color: #fff;
+}
+.sectionContact__input ::placeholder {
+  color: #fff;
+}
+.sectionContact__input input:not(:-moz-placeholder-shown) + label {
+  top: 0%;
+  font-size: 1.2rem;
+  left: 0;
+}
+.sectionContact__input input:focus + label,
+.sectionContact__input input:not(:placeholder-shown) + label {
+  top: 0%;
+  font-size: 1.2rem;
+  left: 0;
+}
+.sectionContact__left {
+  width: 70%;
+}
+.sectionContact__right {
+  width: 30%;
+}
+.sectionContact__right iframe {
+  height: 100%;
+  width: 100%;
+  border: transparent;
+  border-radius: 2rem;
+}
+
 .mySwiper3 {
   display: none;
 }
