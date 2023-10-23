@@ -1,0 +1,206 @@
+body.arabic {
+    direction: rtl;
+    .header {
+        .languages {
+            left: 2%;
+            right: auto;
+        }
+        &topimg {
+            display: none;
+            left: auto;
+            right: 0;
+            transform: r4;
+        }
+    }
+    .banner {
+        &Txt {
+            left: auto;
+            right: 10%;
+        }
+        &Txt2 {
+            left: 10%;
+            right: auto;
+            span {
+                margin-right: 0;
+                margin-left: 0.7rem;
+            }
+            &__left {
+                left: auto;
+                right: -3rem;
+            }
+            &img {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .section3 {
+        &Main {
+            &2 {
+                .section3Main__right-img {
+                    position: absolute;
+                    left: 0;
+                    right: auto;
+                    transform: translateY(-8px);
+                }
+                .section3Main__left {
+                    text-align: left;
+                }
+            }
+        }
+    }
+    .section4 {
+        &__bottom {
+            &_img {
+                transform: rotate(180deg) rotateX(180deg);
+            }
+        }
+    }
+    .box1 {
+        .triangle-arrow1 {
+            left: auto;
+            right: 120px;
+        }
+        .triangle-arrow2 {
+            left: auto;
+            right: 30px;
+        }
+    }
+    .box3 .triangle-arrow3 {
+        left: auto;
+        right: 71.5px;
+    }
+    .triangle-arrow4 {
+        left: auto;
+        right: 30px;
+    }
+    .boox {
+        margin: 0 1rem;
+    }
+    .section5 {
+        &Main {
+            &B {
+                &Img {
+                    .section5MainBo {
+                        right: auto;
+                        left: 0;
+                    }
+                }
+                h4 {
+                    padding-left: 0;
+                    padding-right: 2rem;
+                    &::before {
+                        left: auto;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .section9 {
+        &Main {
+            &__left {
+                &-img2 {
+                    left: auto;
+                    right: -6rem;
+                }
+            }
+        }
+    }
+    .section11_1 {
+        margin-left: 0;
+        margin-right: 10%;
+    }
+    .section11_2_text_box {
+        margin-left: 0;
+        margin-right: 4%;
+    }
+    .section11_2_dot {
+        left: auto;
+        right: 1.2%;
+    }
+    .section3 {
+        &Main {
+            &__left {
+                border-left: 1px solid rgb(61, 61, 61);
+                border-right: unset;
+                ul {
+                    li {
+                        div {
+                            &::before {
+                                right: -1.6rem;
+                                left: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .aboutBanner {
+        &__left {
+            img {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .sectionabout {
+        &Box2_ {
+            ul li {
+                &::before {
+                    right: -30px;
+                    left: auto;
+                    transform: rotate(180deg) rotateX(180deg);
+                }
+            }
+        }
+    }
+    .sectionbebek2discover {
+        &1 {
+            img {
+                margin-left: 0;
+                margin-right: 6.4rem;
+            }
+        }
+        &3 {
+            &img2 {
+                right: auto;
+                left: -20rem;
+            }
+        }
+    }
+    .blogInner {
+        &Main {
+            &Right {
+                .searchBox_input {
+                    i {
+                        right: auto;
+                        left: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    .sectionContact {
+        &__input {
+            label {
+                left: auto;
+                right: 4rem;
+            }
+            input:focus+label,
+            input:not(:placeholder-shown)+label {
+                left: auto;
+                right: 0;
+            }
+        }
+    }
+    .footerMain {
+        &Box {
+            &last {
+                .footerMainBox_2,
+                .menulist2 {
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
+}

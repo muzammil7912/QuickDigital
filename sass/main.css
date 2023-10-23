@@ -438,6 +438,21 @@ img {
 .header li:hover .header__right-dropdown, .header li.active .header__right-dropdown {
   transform: scaleY(1);
 }
+.header .languages {
+  position: absolute;
+  right: 2%;
+}
+.header .languages a {
+  padding: 0.6rem 2rem;
+  color: #fff;
+  border: 1px solid #EB5939;
+  border-radius: 2rem;
+  transition: 0.3s;
+}
+.header .languages a:hover {
+  background: #EB5939;
+  border-color: #fff;
+}
 .header .socialIcon {
   position: absolute;
   right: 2%;
@@ -715,7 +730,7 @@ img {
 .section3 {
   position: relative;
   padding: 10rem 0;
-  background: #000000;
+  background: #000000 url(../webImages/image26.png) no-repeat;
 }
 .section3::before {
   content: "";
@@ -1031,6 +1046,8 @@ img {
 }
 
 .section6 {
+  position: relative;
+  z-index: 2;
   background: rgb(255, 249, 244);
   padding: 6rem 0;
 }
@@ -1082,7 +1099,7 @@ img {
   background: #000 url(../webImages/Rectangle462.png) no-repeat;
   background-size: cover;
   padding: 6rem 0;
-  z-index: -1;
+  z-index: 1;
 }
 .section7 .block__inner {
   min-width: 0;
@@ -1507,10 +1524,11 @@ img {
 }
 
 .boox {
+  position: relative;
+  z-index: 1;
   cursor: pointer;
   transition: 0.3s;
 }
-
 .boox:hover {
   color: #EB5939;
 }
@@ -2954,9 +2972,77 @@ img {
   .blogInnerMainLeft {
     order: 2;
   }
+  .sectionprocess_Main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .sectionTransformingcenter span {
+    font-size: 4.5rem;
+  }
+  .sectionOutstanding {
+    margin-top: 0;
+  }
+  .sectionOutstanding_heading {
+    width: 100%;
+  }
+  .sectionOutstanding_heading h4 {
+    font-size: 3rem;
+  }
+  .sectionOutstanding_heading h2 {
+    font-size: 5em;
+  }
+  .sectionOutstanding_heading p {
+    font-size: 1.6rem;
+  }
+  .sectionOutstandingMain {
+    grid-template-columns: 1fr;
+  }
+  .sectionOutstandingMain2 {
+    margin-top: 0rem;
+  }
+  .sectionOutstandingMain__right::before {
+    display: none;
+  }
+  .sectionthankform h3 {
+    font-size: 5rem;
+  }
+  .sectionthankform h5 {
+    font-size: 2.3rem;
+  }
+  .sectionbebek2Center {
+    width: 100%;
+  }
+  .sectionbebek2Center2 {
+    width: 100%;
+  }
+  .sectionbebek2Center3 .img3 {
+    width: 11rem;
+  }
+  .sectionbebek2discover1 h3 {
+    font-size: 6rem;
+  }
+  .sectionbebek2discover3img2 {
+    display: none;
+  }
+  .sectionbebek2discover2 {
+    width: 100%;
+    top: 0;
+    font-size: 1.8rem;
+  }
+  .sectionbebek2discover5 {
+    display: none;
+  }
+  .sectionprocess_img {
+    display: none;
+  }
+  .sectionprocess_Main {
+    top: 0;
+  }
 }
 @media screen and (max-width: 768px) {
   .sectionBLogMain {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sectionprocess_Main {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -2993,4 +3079,163 @@ img {
   .sectionSEOMain_bottom_ {
     grid-template-columns: repeat(1, 1fr);
   }
+  .sectionprocess_Main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .sectionTransformingcenter span {
+    font-size: 3.5rem;
+  }
+  .socialreward {
+    padding: 1rem 2rem;
+  }
+  .socialreward_img-Box img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .socialreward_img-Box3 {
+    margin-top: -3rem;
+  }
+  .socialreward_img-Box3 img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .socialreward_star img {
+    width: 2rem;
+  }
+}
+body.arabic {
+  direction: rtl;
+}
+body.arabic .header .languages {
+  left: 2%;
+  right: auto;
+}
+body.arabic .headertopimg {
+  display: none;
+  left: auto;
+  right: 0;
+  transform: r4;
+}
+body.arabic .bannerTxt {
+  left: auto;
+  right: 10%;
+}
+body.arabic .bannerTxt2 {
+  left: 10%;
+  right: auto;
+}
+body.arabic .bannerTxt2 span {
+  margin-right: 0;
+  margin-left: 0.7rem;
+}
+body.arabic .bannerTxt2__left {
+  left: auto;
+  right: -3rem;
+}
+body.arabic .bannerTxt2img {
+  transform: rotate(180deg);
+}
+body.arabic .section3Main2 .section3Main__right-img {
+  position: absolute;
+  left: 0;
+  right: auto;
+  transform: translateY(-8px);
+}
+body.arabic .section3Main2 .section3Main__left {
+  text-align: left;
+}
+body.arabic .section4__bottom_img {
+  transform: rotate(180deg) rotateX(180deg);
+}
+body.arabic .box1 .triangle-arrow1 {
+  left: auto;
+  right: 120px;
+}
+body.arabic .box1 .triangle-arrow2 {
+  left: auto;
+  right: 30px;
+}
+body.arabic .box3 .triangle-arrow3 {
+  left: auto;
+  right: 71.5px;
+}
+body.arabic .triangle-arrow4 {
+  left: auto;
+  right: 30px;
+}
+body.arabic .boox {
+  margin: 0 1rem;
+}
+body.arabic .section5MainBImg .section5MainBo {
+  right: auto;
+  left: 0;
+}
+body.arabic .section5MainB h4 {
+  padding-left: 0;
+  padding-right: 2rem;
+}
+body.arabic .section5MainB h4::before {
+  left: auto;
+  right: 0;
+}
+body.arabic .section9Main__left-img2 {
+  left: auto;
+  right: -6rem;
+}
+body.arabic .section11_1 {
+  margin-left: 0;
+  margin-right: 10%;
+}
+body.arabic .section11_2_text_box {
+  margin-left: 0;
+  margin-right: 4%;
+}
+body.arabic .section11_2_dot {
+  left: auto;
+  right: 1.2%;
+}
+body.arabic .section3Main__left {
+  border-left: 1px solid rgb(61, 61, 61);
+  border-right: unset;
+}
+body.arabic .section3Main__left ul li div::before {
+  right: -1.6rem;
+  left: auto;
+}
+body.arabic .aboutBanner__left img {
+  transform: rotate(180deg);
+}
+body.arabic .sectionaboutBox2_ ul li::before {
+  right: -30px;
+  left: auto;
+  transform: rotate(180deg) rotateX(180deg);
+}
+body.arabic .sectionbebek2discover1 img {
+  margin-left: 0;
+  margin-right: 6.4rem;
+}
+body.arabic .sectionbebek2discover3img2 {
+  right: auto;
+  left: -20rem;
+}
+body.arabic .blogInnerMainRight .searchBox_input i {
+  right: auto;
+  left: 1rem;
+}
+body.arabic .sectionContact__input label {
+  left: auto;
+  right: 4rem;
+}
+body.arabic .sectionContact__input input:not(:-moz-placeholder-shown) + label {
+  left: auto;
+  right: 0;
+}
+body.arabic .sectionContact__input input:focus + label,
+body.arabic .sectionContact__input input:not(:placeholder-shown) + label {
+  left: auto;
+  right: 0;
+}
+body.arabic .footerMainBoxlast .footerMainBox_2,
+body.arabic .footerMainBoxlast .menulist2 {
+  justify-content: flex-start;
 }/*# sourceMappingURL=main.css.map */

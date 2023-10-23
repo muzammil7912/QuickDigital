@@ -109,6 +109,21 @@
             transform: scaleY(1);
         }
     }
+    .languages {
+        position: absolute;
+        right: 2%;
+        a {
+            padding: .6rem 2rem;
+            color: #fff;
+            border: 1px solid $primary-color;
+            border-radius: 2rem;
+            transition: .3s;
+            &:hover {
+                background: $primary-color;
+                border-color: #fff;
+            }
+        }
+    }
     .socialIcon {
         position: absolute;
         right: 2%;

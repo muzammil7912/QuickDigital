@@ -132,3 +132,53 @@ $(document).on("click", ".closeIcon", function() {
 $(document).on("click", ".header__right li", function() {
     $(this).addClass("active");
 });
+
+
+
+// URL se "language" parameter ko get karne ka function
+function getLanguageParameter() {
+    // URL ko hasil karein
+    var url = new URL(window.location.href);
+    // "language" parameter ko get karein
+    var language = url.searchParams.get("language");
+    return language;
+}
+
+// "language" parameter ko hasil karein
+var language = getLanguageParameter();
+
+// Agar "language" parameter mojud hai
+if (language) {
+    $("body").addClass("arabic")
+} else {
+    console.log("Language parameter not found in the URL.");
+}
+
+// counter
+var a = 0;
+$(window).scroll(function() {
+    //var oTop = $('#counter').offset().top - window.innerHeight;
+    // if (a == 0 && $(window).scrollTop() > oTop) {
+    $('.counter-value').each(function() {
+        var $this = $(this),
+            countTo = $this.attr('data-count');
+        $({
+            countNum: $this.text()
+        }).animate({
+            countNum: countTo
+        }, {
+            duration: 2000,
+            easing: 'swing',
+            step: function() {
+                $this.text(Math.floor(this.countNum));
+            },
+            complete: function() {
+                $this.text(this.countNum);
+                //alert('finished');
+            }
+        });
+    });
+    a = 1;
+    //}
+});
+// counter

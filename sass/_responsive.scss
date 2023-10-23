@@ -89,11 +89,103 @@
             }
         }
     }
+    .sectionprocess {
+        &_Main {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    .sectionTransforming {
+        &center {
+            span {
+                font-size: 4.5rem;
+            }
+        }
+    }
+    .sectionOutstanding {
+        &_heading {
+            width: 100%;
+            h4 {
+                font-size: 3rem;
+            }
+            h2 {
+                font-size: 5em;
+            }
+            p {
+                font-size: 1.6rem;
+            }
+        }
+        &Main {
+            grid-template-columns: 1fr;
+            &2 {
+                margin-top: 0rem;
+            }
+            &__right {
+                &::before {
+                    display: none;
+                }
+            }
+        }
+        margin-top: 0;
+    }
+    .sectionthankform {
+        h3 {
+            font-size: 5rem;
+        }
+        h5 {
+            font-size: 2.3rem;
+        }
+    }
+    .sectionbebek2 {
+        &Center {
+            width: 100%;
+        }
+        &Center2 {
+            width: 100%;
+        }
+        &Center3 {
+            .img3 {
+                width: 11rem;
+            }
+        }
+    }
+    .sectionbebek2discover {
+        &1 {
+            h3 {
+                font-size: 6rem;
+            }
+        }
+        &3 {
+            &img2 {
+                display: none;
+            }
+        }
+        &2 {
+            width: 100%;
+            top: 0;
+            font-size: 1.8rem;
+        }
+        &5 {
+            display: none;
+        }
+    }
+    .sectionprocess {
+        &_img {
+            display: none;
+        }
+        &_Main {
+            top: 0;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
     .sectionBLogMain {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .sectionprocess {
+        &_Main {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 }
 
@@ -137,6 +229,41 @@
                         grid-template-columns: repeat(1, 1fr);
                     }
                 }
+            }
+        }
+    }
+    .sectionprocess {
+        &_Main {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    .sectionTransforming {
+        &center {
+            span {
+                font-size: 3.5rem;
+            }
+        }
+    }
+    .socialreward {
+        padding: 1rem 2rem;
+        &_img {
+            &-Box {
+                img {
+                    width: 3rem;
+                    height: 3rem;
+                }
+                &3 {
+                    margin-top: -3rem;
+                    img {
+                        width: 4rem;
+                        height: 4rem;
+                    }
+                }
+            }
+        }
+        &_star {
+            img {
+                width: 2rem;
             }
         }
     }
