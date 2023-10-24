@@ -18,14 +18,14 @@
         font-size: 11rem;
         line-height: .9;
         text-transform: uppercase;
+        font-weight: 400;
         span {
-            background: linear-gradient(180deg, #EB5939 0%, #F3A157 100%), linear-gradient(180deg, #EB5939 55.7%, #FE980E 100%, #FE980E 100%);
-            -webkit-background-clip: text;
-            /* Safari/Chrome */
+            text-shadow: 0px 0px 0px rgba(248, 131, 27, 0.25), 0px 4px 8px rgba(248, 131, 27, 0.25), 0px 15px 15px rgba(248, 131, 27, 0.21), 0px 35px 21px rgba(248, 131, 27, 0.13), 0px 62px 25px rgba(248, 131, 27, 0.04), 0px 96px 27px rgba(248, 131, 27, 0.00);
+            background: linear-gradient(180deg, #EB5939 55.7%, #FE980E 100%, #FE980E 100%);
             background-clip: text;
-            color: transparent;
-            /* Text color will be transparent */
-            box-shadow: 0px 0px 0px 0px rgba(248, 131, 27, 0.25);
+            -webkit-background-clip: text;
+            // -webkit-text-fill-color: transparent;
+            -webkit-text-fill-color: #EB5939;
         }
     }
     &Main {

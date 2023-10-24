@@ -1,270 +1,317 @@
-@media screen and (max-width: 979px) {
-    .section7Main {
-        &.dblo {
-            display: none;
-        }
-        &.d-none {
-            display: block;
-        }
-    }
-    .section5Main {
-        &M {
-            display: none;
-        }
-        &Swiper {
-            display: block;
-        }
-        &Bottom {
-            display: block;
-        }
-    }
-    .aboutBanner {
-        &_ {
-            flex-direction: column;
-            gap: 0;
-            &_left {
-                width: 100%;
-                text-align: center;
-                img {
-                    display: none;
-                }
-                br {
-                    display: none;
-                }
-            }
-            &_right {
-                display: none;
-            }
-        }
-    }
-    .sectionabout {
-        .imageback {
-            display: none;
-        }
-        &h h4 {
-            font-size: 3rem;
-        }
-        &Box {
-            flex-direction: column;
-        }
-        &Box2 {
-            &_ {
-                flex-direction: column;
-                &_right {
-                    order: 1 !important;
-                    img {
-                        max-width: 100%;
+        @media screen and (max-width: 979px) {
+            .header {
+                &__center {
+                    &--left {
+                        img {
+                            width: 7rem;
+                        }
+                    }
+                    &--right {
+                        h1 {
+                            line-height: .9;
+                        }
+                        span {
+                            display: block;
+                        }
                     }
                 }
-                &_left {
-                    order: 2 !important;
+                .languages {
+                    right: 14%;
                 }
             }
-        }
-    }
-    .portfolioBanner {
-        &text {
-            width: 100%;
-            h1 {
-                font-size: 4rem;
+            .section6 {
+                &_ {
+                    grid-template-columns: 1fr;
+                }
             }
-        }
-    }
-    .sectionContact {
-        &_ {
-            flex-direction: column;
-            &_left {
-                width: 100%;
-            }
-            &_right {
-                width: 100%;
-            }
-        }
-    }
-    .blogInner {
-        &Main {
-            grid-template-columns: 1fr;
-            &Left {
-                order: 2;
-            }
-        }
-    }
-    .sectionprocess {
-        &_Main {
-            grid-template-columns: repeat(3, 1fr);
-        }
-    }
-    .sectionTransforming {
-        &center {
-            span {
-                font-size: 4.5rem;
-            }
-        }
-    }
-    .sectionOutstanding {
-        &_heading {
-            width: 100%;
-            h4 {
-                font-size: 3rem;
-            }
-            h2 {
-                font-size: 5em;
-            }
-            p {
-                font-size: 1.6rem;
-            }
-        }
-        &Main {
-            grid-template-columns: 1fr;
-            &2 {
-                margin-top: 0rem;
-            }
-            &__right {
-                &::before {
+            .section7Main {
+                &.dblo {
                     display: none;
                 }
-            }
-        }
-        margin-top: 0;
-    }
-    .sectionthankform {
-        h3 {
-            font-size: 5rem;
-        }
-        h5 {
-            font-size: 2.3rem;
-        }
-    }
-    .sectionbebek2 {
-        &Center {
-            width: 100%;
-        }
-        &Center2 {
-            width: 100%;
-        }
-        &Center3 {
-            .img3 {
-                width: 11rem;
-            }
-        }
-    }
-    .sectionbebek2discover {
-        &1 {
-            h3 {
-                font-size: 6rem;
-            }
-        }
-        &3 {
-            &img2 {
-                display: none;
-            }
-        }
-        &2 {
-            width: 100%;
-            top: 0;
-            font-size: 1.8rem;
-        }
-        &5 {
-            display: none;
-        }
-    }
-    .sectionprocess {
-        &_img {
-            display: none;
-        }
-        &_Main {
-            top: 0;
-        }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .sectionBLogMain {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .sectionprocess {
-        &_Main {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-}
-
-@media screen and (max-width: 461px) {
-    .header__right>ul {
-        width: 15rem;
-    }
-    .header__right-dropdown {
-        right: -145%;
-        width: 219px;
-        background: #000;
-    }
-    .portfolioBannertext {
-        width: 100%;
-        h1 {
-            font-size: 4rem;
-        }
-    }
-    .sectionBLog {
-        &Main {
-            grid-template-columns: repeat(1, 1fr);
-        }
-        .moreCOntant {
-            position: absolute;
-            bottom: -11rem;
-            left: 0;
-            right: 0;
-            margin: 0 auto;
-            width: -moz-fit-content;
-            width: fit-content;
-        }
-    }
-    .sectionSEO {
-        &Main {
-            &_ {
-                &top {
-                    grid-template-columns: repeat(1, 1fr);
+                &.d-none {
+                    display: block;
                 }
-                &bottom {
+            }
+            .section5Main {
+                &M {
+                    display: none;
+                }
+                &Swiper {
+                    display: block;
+                }
+                &Bottom {
+                    display: block;
+                }
+            }
+            .aboutBanner {
+                &_ {
+                    flex-direction: column;
+                    gap: 0;
+                    &_left {
+                        width: 100%;
+                        text-align: center;
+                        h2 {}
+                        img {
+                            display: none;
+                        }
+                        br {
+                            display: none;
+                        }
+                    }
+                    &_right {
+                        display: none;
+                    }
+                }
+            }
+            .sectionabout {
+                .imageback {
+                    display: none;
+                }
+                &h h4 {
+                    font-size: 3rem;
+                }
+                &Box {
+                    flex-direction: column;
+                    h6 {
+                        width: 100%;
+                    }
+                }
+                &Box2 {
                     &_ {
-                        grid-template-columns: repeat(1, 1fr);
+                        flex-direction: column;
+                        &_right {
+                            order: 1 !important;
+                            img {
+                                max-width: 100%;
+                            }
+                        }
+                        &_left {
+                            order: 2 !important;
+                        }
                     }
                 }
             }
-        }
-    }
-    .sectionprocess {
-        &_Main {
-            grid-template-columns: repeat(1, 1fr);
-        }
-    }
-    .sectionTransforming {
-        &center {
-            span {
-                font-size: 3.5rem;
+            .portfolioBanner {
+                &text {
+                    width: 100%;
+                    h1 {
+                        font-size: 4rem;
+                    }
+                }
             }
-        }
-    }
-    .socialreward {
-        padding: 1rem 2rem;
-        &_img {
-            &-Box {
-                img {
-                    width: 3rem;
-                    height: 3rem;
+            .sectionContact {
+                &_ {
+                    flex-direction: column;
+                    &_left {
+                        width: 100%;
+                    }
+                    &_right {
+                        width: 100%;
+                    }
+                }
+            }
+            .blogInner {
+                &Main {
+                    grid-template-columns: 1fr;
+                    &Left {
+                        order: 2;
+                    }
+                }
+            }
+            .sectionprocess {
+                &_Main {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+            .sectionTransforming {
+                &center {
+                    span {
+                        font-size: 4.5rem;
+                    }
+                }
+            }
+            .sectionOutstanding {
+                &_heading {
+                    width: 100%;
+                    h4 {
+                        font-size: 3rem;
+                    }
+                    h2 {
+                        font-size: 5em;
+                    }
+                    p {
+                        font-size: 1.6rem;
+                    }
+                }
+                &Main {
+                    grid-template-columns: 1fr;
+                    &2 {
+                        margin-top: 0rem;
+                    }
+                    &__right {
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+                margin-top: 0;
+            }
+            .sectionthankform {
+                h3 {
+                    font-size: 5rem;
+                }
+                h5 {
+                    font-size: 2.3rem;
+                }
+            }
+            .sectionbebek2 {
+                &Center {
+                    width: 100%;
+                }
+                &Center2 {
+                    width: 100%;
+                }
+                &Center3 {
+                    .img3 {
+                        width: 11rem;
+                    }
+                }
+            }
+            .sectionbebek2discover {
+                &1 {
+                    h3 {
+                        font-size: 6rem;
+                    }
                 }
                 &3 {
-                    margin-top: -3rem;
+                    &img2 {
+                        display: none;
+                    }
+                }
+                &2 {
+                    width: 100%;
+                    top: 0;
+                    font-size: 1.8rem;
+                }
+                &5 {
+                    display: none;
+                }
+            }
+            .sectionprocess {
+                &_img {
+                    display: none;
+                }
+                &_Main {
+                    top: 0;
+                }
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .section7Main3 {
+                overflow: auto;
+            }
+            .sectionBLogMain {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .sectionprocess {
+                &_Main {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+        
+        @media screen and (max-width: 461px) {
+            .aboutBanner {
+                &_ {
+                    width: 90%;
+                    &_left {
+                        h2 {
+                            font-size: 5rem;
+                        }
+                    }
+                }
+            }
+            .sectionabout {
+                &h {
+                    width: 100%;
+                }
+            }
+            .header__right>ul {
+                width: 15rem;
+            }
+            .header__right-dropdown {
+                right: -145%;
+                width: 219px;
+                background: #000;
+            }
+            .portfolioBannertext {
+                width: 100%;
+                h1 {
+                    font-size: 4rem;
+                }
+            }
+            .sectionBLog {
+                &Main {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+                .moreCOntant {
+                    position: absolute;
+                    bottom: -11rem;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    width: -moz-fit-content;
+                    width: fit-content;
+                }
+            }
+            .sectionSEO {
+                &Main {
+                    &_ {
+                        &top {
+                            grid-template-columns: repeat(1, 1fr);
+                        }
+                        &bottom {
+                            &_ {
+                                grid-template-columns: repeat(1, 1fr);
+                            }
+                        }
+                    }
+                }
+            }
+            .sectionprocess {
+                &_Main {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+            .sectionTransforming {
+                &center {
+                    span {
+                        font-size: 3.5rem;
+                    }
+                }
+            }
+            .socialreward {
+                padding: 1rem 2rem;
+                &_img {
+                    &-Box {
+                        img {
+                            width: 3rem;
+                            height: 3rem;
+                        }
+                        &3 {
+                            margin-top: -3rem;
+                            img {
+                                width: 4rem;
+                                height: 4rem;
+                            }
+                        }
+                    }
+                }
+                &_star {
                     img {
-                        width: 4rem;
-                        height: 4rem;
+                        width: 2rem;
                     }
                 }
             }
         }
-        &_star {
-            img {
-                width: 2rem;
-            }
-        }
-    }
-}

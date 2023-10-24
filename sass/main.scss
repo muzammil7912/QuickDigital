@@ -25,7 +25,8 @@
     .main2 {
         position: absolute;
         top: 0;
-        right: 0;
+        right: 10rem;
+        opacity: 20%;
         width: 40%;
         height: 100vh;
         object-fit: contain;
@@ -67,7 +68,7 @@
         z-index: 3;
         background: rgba(217, 217, 217, 0.08);
         border-radius: 2rem;
-        bottom: 10%;
+        bottom: 15%;
         right: 10%;
         width: 40%;
         color: #fff;
@@ -78,10 +79,11 @@
         }
         h3 {
             font-size: 1.6rem;
-            font-size: 500;
+            font-weight: 400;
+            line-height: 1.1;
         }
         span {
-            width: 1.4rem;
+            width: .9rem;
             position: relative;
             background: linear-gradient(180deg, #EB5939 0%, #F3A157 100%), linear-gradient(180deg, #EB5939 55.7%, #FE980E 100%, #FE980E 100%);
             /* border: 4px solid; */
@@ -94,6 +96,7 @@
         p {
             display: flex;
             font-size: 1rem;
+            opacity: .5;
         }
         .bannerTxt2img {
             align-self: flex-end
@@ -103,13 +106,15 @@
 
 .section1 {
     background: #1e1e1e;
-}
-
-.section1 h2 {
-    text-align: center;
-    font-size: 4.5rem;
-    color: #fff;
-    font-weight: 400;
+    padding: 1rem 0 .7rem;
+    h2 {
+        text-align: center;
+        font-size: 4.5rem;
+        color: #fff;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 0;
+    }
 }
 
 .section2 {
@@ -206,13 +211,14 @@
     position: relative;
     padding: 10rem 0;
     background: #000000 url(../webImages/image26.png) no-repeat;
-    &::before {
+    &::after {
         content: '';
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
         height: 40rem;
+        width: 100%;
         background: linear-gradient(0deg, #000000 27.41%, rgba(28, 28, 28, 0) 87.24%);
     }
     &_img {
@@ -316,13 +322,18 @@
             content: '';
             transition: .3s;
         }
-        &:hover::before {
-            position: absolute;
-            left: -21%;
-            background: rgba(22, 22, 22, 1);
-            width: 142%;
-            height: 100%;
-            border-radius: 7rem;
+        &:hover {
+            .section3Main__right-img {
+                display: block;
+            }
+            &::before {
+                position: absolute;
+                left: -21%;
+                background: rgba(22, 22, 22, 1);
+                width: 142%;
+                height: 100%;
+                border-radius: 7rem;
+            }
         }
         .section3Main__left {
             padding: 4rem 2rem;
@@ -333,6 +344,7 @@
             text-align: right;
             h6 {
                 font-size: 2.4rem;
+                text-transform: uppercase;
             }
         }
         .section3Main__right {
@@ -348,6 +360,7 @@
                 position: absolute;
                 right: 0;
                 transform: translateY(-8px);
+                display: none;
                 img {
                     width: 14rem;
                     position: relative;
@@ -464,13 +477,23 @@
                 position: relative;
                 padding: 3rem;
                 z-index: 2;
+                &:hover {
+                    .img2 {
+                        display: block;
+                    }
+                    .img3 {
+                        display: block;
+                    }
+                }
                 .img2 {
+                    display: none;
                     position: absolute;
                     width: 90%;
                     left: -5rem;
                     top: 0;
                 }
                 .img3 {
+                    display: none;
                     position: absolute;
                     width: 90%;
                     left: 4rem;
@@ -487,6 +510,7 @@
                     top: 0;
                 }
                 .img1 {
+                    position: relative;
                     width: 100%;
                     aspect-ratio: 1;
                     border-radius: 50%;
@@ -502,6 +526,7 @@
         }
         &Box {
             margin-top: 2rem;
+            position: relative;
             ul {
                 display: flex;
                 gap: 1rem;
@@ -529,7 +554,7 @@
     position: relative;
     z-index: 2;
     background: rgba(255, 249, 244, 1);
-    padding: 6rem 0;
+    padding: 8rem 0;
     .block__inner {
         min-width: 0;
     }
@@ -545,6 +570,7 @@
             font-size: 2.6rem;
         }
         h2 {
+            text-transform: uppercase;
             font-size: 6rem;
             font-weight: 400;
             line-height: .8;
@@ -584,7 +610,7 @@
     position: relative;
     background: #000 url(../webImages/Rectangle462.png) no-repeat;
     background-size: cover;
-    padding: 6rem 0;
+    padding: 8rem 0;
     z-index: 1;
     .block__inner {
         min-width: 0;
@@ -660,6 +686,11 @@
                 img {
                     width: 100%;
                     border-radius: 50%;
+                    transition: .3s;
+                    outline-offset: 5px;
+                    &:hover {
+                        outline: 4px solid $primary-color;
+                    }
                 }
             }
             &__body {
@@ -727,11 +758,12 @@
 }
 
 .section9 {
-    padding: 6rem 0;
+    padding: 8rem 0;
     h2 {
         font-size: 5rem;
         text-align: center;
         font-weight: 400;
+        text-transform: uppercase;
     }
     &Main {
         display: grid;
@@ -777,7 +809,7 @@
     position: relative;
     background: #000 url(../webImages/24.png) no-repeat;
     background-size: cover;
-    padding: 5rem 0;
+    padding: 8rem 0;
     .img1 {
         position: absolute;
         bottom: -6rem;
@@ -824,7 +856,28 @@
         }
     }
     &Main {
+        position: relative;
         margin-top: 4rem;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 20%;
+            left: 0;
+            top: 0;
+            height: 100%;
+            background: linear-gradient(90deg, #000 5.93%, rgba(0, 0, 0, 0.00) 178.28%);
+            z-index: 2;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 20%;
+            right: 0;
+            top: 0;
+            height: 100%;
+            background: linear-gradient(90deg, #000 5.93%, rgba(0, 0, 0, 0.00) 178.28%);
+            z-index: 2;
+        }
         &Box {
             color: #fff;
             text-align: center;
@@ -913,6 +966,14 @@
     cursor: pointer;
 }
 
+.section11_2_box_bottom {
+    display: none;
+    span {
+        display: block;
+        padding-bottom: 2rem;
+    }
+}
+
 .section11_2_topline {
     margin: 0;
     max-width: 80%;
@@ -922,6 +983,7 @@
 
 .section11_2_text_box>p {
     font-weight: 700;
+    font-size: 1.8rem;
 }
 
 .section11_2_arrow_img {
@@ -977,14 +1039,14 @@
 
 .box1 .triangle-arrow1 {
     position: absolute;
-    left: 119px;
+    left: 120px;
     top: 17px;
 }
 
 .box1 .triangle-arrow2 {
     position: absolute;
     left: 30px;
-    top: 46.5px;
+    top: 48.5px;
 }
 
 .box2 {
@@ -998,7 +1060,7 @@
 
 .box3 .triangle-arrow3 {
     position: absolute;
-    left: 71.5px;
+    left: 71px;
 }
 
 .box4 {
@@ -1008,7 +1070,7 @@
 
 .triangle-arrow4 {
     position: absolute;
-    top: 56.5px;
+    top: 56.8px;
     left: 30px;
 }
 
@@ -1035,6 +1097,86 @@
 .section5 {
     &h {
         display: none;
+    }
+}
+
+.section3MainChanges {
+    grid-column: 1/-1;
+    max-height: 50rem;
+    overflow: auto;
+    &::-webkit-scrollbar-thumb {
+        background: $primary-color;
+        border-radius: 1rem 0px 1rem 0px;
+    }
+    &::-webkit-scrollbar {
+        width: 0;
+        background-color: $secondary-color;
+    }
+    &Box {
+        transition: .3s;
+        border-radius: 9rem;
+        &:hover {
+            background: rgb(22, 22, 22);
+        }
+        &_ {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            border-bottom: 1px solid rgb(61, 61, 61);
+            &left {
+                border-right: 1px solid rgb(61, 61, 61);
+                width: 35%;
+                border-right: 1px solid rgb(61, 61, 61);
+                border-bottom: 1px solid rgb(61, 61, 61);
+                padding-right: 2rem;
+                position: relative;
+                display: grid;
+                align-items: center;
+                justify-content: flex-end;
+                padding: 2rem;
+                text-align: right;
+                color: #fff;
+            }
+            &right {
+                position: relative;
+                width: 65%;
+                padding: 4rem 2rem;
+                p {
+                    color: #fff;
+                    margin: 0;
+                    font-size: 1.3rem;
+                    width: 70%;
+                }
+                &_ {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    transition: .3s;
+                    opacity: 0;
+                    img {
+                        width: 14rem;
+                        position: relative;
+                        z-index: 2;
+                    }
+                    span {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 4rem;
+                        height: 4rem;
+                        background: #EB5939;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+        &:hover {
+            .section3MainChangesBox_right_ {
+                opacity: 1;
+            }
+        }
     }
 }
 
@@ -1241,6 +1383,17 @@
         &Main {
             .swiper-wrapper2 {
                 flex-wrap: unset;
+            }
+            &Box {
+                &__img {
+                    overflow: hidden;
+                    img {
+                        transition: .3s;
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }
+                }
             }
         }
         &Main2 {

@@ -108,16 +108,26 @@
 /* ------------------Typography------------------ */
 
 html {
-    font-size: 62.5%;
+    font-size: 0.730vw;
     scroll-behavior: smooth;
 }
 
+@media screen and (max-width: 979px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
 body {
+    position: relative;
     font-family: 'Poppins', sans-serif;
     color: $font-color;
     font-size: 1.4rem;
+    margin: 0 auto;
+    max-width: 1600px;
     overflow-x: hidden;
-    margin: 0;
+    margin: 0 auto;
+    display: block;
     padding: 0;
 }
 
@@ -138,7 +148,7 @@ h4,
 h5,
 h6 {
     font-family: 'Poppins', sans-serif;
-    line-height: 1.2;
+    line-height: .9;
     margin: 1rem 0;
 }
 
@@ -204,4 +214,45 @@ img {
 
 .justify_space {
     justify-content: space-between;
+}
+
+.roteteimg {
+    animation: rotate2 5s linear infinite;
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+// -------------------------------scroll Smooth --------------------
+.dsdasdds {
+    position: relative;
+    // height: 30rem;
+    // overflow: auto;
+    // overflow-x: hidden;
+    // &::after {
+    //     content: '';
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 0;
+    //     right: 0;
+    //     height: 40rem;
+    //     width: 100%;
+    //     background: linear-gradient(0deg, #000000 27.41%, rgba(28, 28, 28, 0) 87.24%);
+    // }
+}
+
+.dsdasdds::-webkit-scrollbar-thumb {
+    background: $primary-color;
+    border-radius: 1rem 0px 1rem 0px;
+}
+
+.dsdasdds::-webkit-scrollbar {
+    width: 0.4rem;
+    background-color: $secondary-color;
 }
