@@ -1,7 +1,13 @@
+AOS.init();
+
 var swiper = new Swiper(".mySwiper", {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 10,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
 
     breakpoints: {
         640: {
@@ -25,7 +31,8 @@ var swiper = new Swiper(".mySwiper", {
 var swiper2 = new Swiper(".mySwiper2", {
     loop: true,
     slidesPerView: 1,
-    spaceBetween: 10,
+    spaceBetween: 90,
+    centeredSlides: true,
 
     breakpoints: {
         640: {
@@ -55,6 +62,11 @@ var swiper3 = new Swiper(".mySwiper3", {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 10,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+
 
     breakpoints: {
         640: {
@@ -75,18 +87,25 @@ var swiper4 = new Swiper(".mySwiper4", {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 10,
-
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".swiperbutton__Right",
+        prevEl: ".swiperbutton__Left",
+    },
     breakpoints: {
         640: {
             slidesPerView: 1,
             spaceBetween: 20,
         },
         768: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 40,
         },
         1024: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 50,
         },
     },
@@ -96,6 +115,10 @@ var swiper5 = new Swiper(".section5MainSwiper", {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 10,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
 
     breakpoints: {
         640: {
@@ -103,11 +126,11 @@ var swiper5 = new Swiper(".section5MainSwiper", {
             spaceBetween: 20,
         },
         768: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 40,
         },
         1024: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 50,
         },
     },

@@ -108,8 +108,19 @@
 /* ------------------Typography------------------ */
 
 html {
+    font-size: 62.5%;
     font-size: 0.730vw;
     scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 1600px) {
+    html {}
+    .mySwiper2 .swiper-slide-prev {
+        left: -15rem;
+    }
+    .mySwiper2 .swiper-slide-next {
+        right: -15rem;
+    }
 }
 
 @media screen and (max-width: 979px) {
@@ -124,7 +135,7 @@ body {
     color: $font-color;
     font-size: 1.4rem;
     margin: 0 auto;
-    max-width: 1600px;
+    // max-width: 1600px;
     overflow-x: hidden;
     margin: 0 auto;
     display: block;
