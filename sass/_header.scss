@@ -137,6 +137,11 @@
     }
     &__center {
         padding: 0 3rem;
+        &--left {
+            img {
+                width: 9rem;
+            }
+        }
         &--right {
             h1 {
                 font-size: 3.9rem;

@@ -154,6 +154,14 @@ h6 {
   margin: 1rem 0;
 }
 
+.d-none {
+  display: none;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
 h1 {
   font-family: "Poppins", sans-serif;
   font-size: 6rem;
@@ -356,9 +364,10 @@ img {
   box-shadow: 0px 0px 0px 0px rgba(248, 131, 27, 0.25), 0px 4px 8px 0px rgba(248, 131, 27, 0.25), 0px 15px 15px 0px rgba(248, 131, 27, 0.21), 0px 35px 21px 0px rgba(248, 131, 27, 0.13), 0px 62px 25px 0px rgba(248, 131, 27, 0.04), 0px 96px 27px 0px rgba(248, 131, 27, 0);
   color: #fff;
   border-radius: 3rem;
-  padding: 10px 30px 10px 30px;
+  padding: 1rem 3rem 1rem 3rem;
   font-size: 2rem;
   color: #fff;
+  border: transparent;
   cursor: pointer;
 }
 .btn:hover {
@@ -494,6 +503,9 @@ img {
 }
 .header__center {
   padding: 0 3rem;
+}
+.header__center--left img {
+  width: 9rem;
 }
 .header__center--right h1 {
   font-size: 3.9rem;
@@ -816,7 +828,6 @@ img {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 26rem;
   width: 100%;
   background: linear-gradient(0deg, #000000 27.41%, rgba(28, 28, 28, 0) 87.24%);
 }
@@ -985,7 +996,7 @@ img {
   width: fit-content;
   border: 2px solid #EB5939;
   color: #F6F6F6;
-  font-size: 20px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
@@ -1027,7 +1038,7 @@ img {
   color: #fff;
 }
 .section4__bottom_body p {
-  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 1.4;
 }
 .section4__bottom_body h4 {
@@ -1220,10 +1231,10 @@ img {
 }
 .section7 .section7e {
   position: absolute;
-  top: -10px;
+  top: -1rem;
   z-index: 0;
   display: flex;
-  gap: 8px;
+  gap: 0.8rem;
 }
 .section7 .section7e span {
   position: relative;
@@ -1331,6 +1342,7 @@ img {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
+  text-transform: uppercase;
 }
 .section7Main2 p {
   text-align: center;
@@ -2173,7 +2185,7 @@ img {
 
 .footere {
   position: absolute;
-  top: -10px;
+  top: -1rem;
   z-index: 0;
   display: flex;
   gap: 17px;
@@ -2285,6 +2297,19 @@ img {
   color: #fff;
   font-size: 3.4rem;
   font-weight: 500;
+  padding-left: 2rem;
+  position: relative;
+}
+.aboutBanner__right h3::before {
+  content: "";
+  left: 0;
+  top: 0;
+  position: absolute;
+  height: 100%;
+  width: 0.5rem;
+  border-radius: 96px;
+  background: linear-gradient(180deg, #EB5939 55.7%, #FE980E 100%, #FE980E 100%);
+  box-shadow: 0px 0px 0px 0px rgba(248, 131, 27, 0.25), 0px 4px 8px 0px rgba(248, 131, 27, 0.25), 0px 15px 15px 0px rgba(248, 131, 27, 0.21), 0px 35px 21px 0px rgba(248, 131, 27, 0.13), 0px 62px 25px 0px rgba(248, 131, 27, 0.04), 0px 96px 27px 0px rgba(248, 131, 27, 0);
 }
 .aboutBanner__right .quoteBox input {
   width: 100%;
@@ -3158,6 +3183,156 @@ img {
     display: none;
   }
 }
+.serviceInnerBanner h2 {
+  font-size: 4rem;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+.serviceInnerBanner p {
+  font-size: 1.4rem;
+}
+.serviceInnerBanner span {
+  font-size: 1.2rem;
+}
+
+.sectionservicesInner {
+  padding: 10rem 0;
+  position: relative;
+}
+.sectionservicesInner_txt {
+  position: absolute;
+  width: 90%;
+  margin: 0 auto;
+  left: 0;
+  top: -4rem;
+  font-size: 30rem;
+  z-index: -2;
+  color: #f7f7f7;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+  font-weight: 400;
+  line-height: 1;
+}
+.sectionservicesInner_ {
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+  gap: 1rem;
+}
+.sectionservicesInner__right {
+  position: relative;
+}
+.sectionservicesInner__right .img1 {
+  width: 100%;
+}
+.sectionservicesInner__right .img2 {
+  position: absolute;
+  left: -50%;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200%;
+  z-index: -1;
+}
+.sectionservicesInner__right .img3 {
+  position: absolute;
+  left: -8%;
+  top: 48%;
+  transform: translateY(-50%);
+  width: 3rem;
+}
+.sectionservicesInner__right .img4 {
+  position: absolute;
+  right: -13%;
+  top: 48%;
+  transform: translateY(-50%);
+  width: 3rem;
+}
+.sectionservicesInner h3 {
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+.sectionservicesInner h3 span {
+  color: #EB5939;
+  font-size: 6rem;
+}
+
+.sectionservicesInner2 .imageback {
+  top: -6rem;
+}
+.sectionservicesInner2 .imageback img {
+  width: 100vw;
+}
+.sectionservicesInner2 .sectionabouth {
+  width: 90%;
+}
+.sectionservicesInner2Main {
+  display: grid;
+  gap: 2rem 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 4rem;
+}
+.sectionservicesInner2MainBox {
+  background: #fff;
+  border-radius: 1rem;
+  border: 1px solid #D6D6D6;
+  padding: 2rem;
+}
+.sectionservicesInner2MainBox_top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.sectionservicesInner2MainBox_top img {
+  width: 4rem;
+}
+.sectionservicesInner2MainBox_top h4 {
+  font-size: 3rem;
+}
+.sectionservicesInner2MainBox_bottom p {
+  font-size: 1.2rem;
+}
+
+.sectionservicesInner3 {
+  padding: 20rem 0 5rem;
+  text-align: center;
+}
+.sectionservicesInner3 h2 {
+  font-size: 5.7rem;
+  text-transform: uppercase;
+}
+.sectionservicesInner3 p a {
+  border-bottom: 1px solid #000;
+}
+.sectionservicesInner3 h5 {
+  width: 90%;
+  margin: 0 auto;
+  color: #EB5939;
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  line-height: 1.3;
+}
+
+.sectionservicesInner4 h2 {
+  font-size: 4rem;
+}
+
+.servicesInnerList {
+  list-style: none;
+}
+.servicesInnerList li {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.servicesInnerList li::before {
+  content: "";
+  position: absolute;
+  left: -3rem;
+  top: 0px;
+  background: url(../webImages/111.png) no-repeat;
+  width: 3rem;
+  height: 3rem;
+}
+
 @media screen and (max-width: 979px) {
   .header__center--left img {
     width: 7rem;
@@ -3354,6 +3529,23 @@ img {
   }
 }
 @media screen and (max-width: 461px) {
+  .mySwiper4 {
+    min-height: 36rem;
+  }
+  .mySwiper4 .swiper-wrapper {
+    overflow: unset !important;
+  }
+  .mySwiper4 .swiper-slide.swiper-slide-active {
+    width: 80% !important;
+    margin-left: 2rem;
+    transition: 0.3s;
+  }
+  .mySwiper4 .swiper-slide.swiper-slide-next {
+    top: 5rem;
+  }
+  .mySwiper4 .swiper-slide.swiper-slide-next .section7MainBox__body {
+    display: none;
+  }
   .btn {
     padding: 2rem 4rem;
   }
@@ -3391,6 +3583,9 @@ img {
   .section7Main2btn {
     padding: 1.4rem;
     width: 100%;
+  }
+  .section11_2_box_sec:hover {
+    border-radius: 0;
   }
   .aboutBanner_ {
     width: 90%;

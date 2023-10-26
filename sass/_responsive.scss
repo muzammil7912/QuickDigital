@@ -251,6 +251,23 @@
                     }
                     
                     @media screen and (max-width: 461px) {
+                        .mySwiper4 {
+                            min-height: 36rem;
+                            .swiper-wrapper {
+                                overflow: unset !important;
+                            }
+                            .swiper-slide.swiper-slide-active {
+                                width: 80% !important;
+                                margin-left: 2rem;
+                                transition: .3s;
+                            }
+                            .swiper-slide.swiper-slide-next {
+                                top: 5rem;
+                            }
+                            .swiper-slide.swiper-slide-next .section7MainBox__body {
+                                display: none;
+                            }
+                        }
                         .btn {
                             padding: 2rem 4rem;
                         }
@@ -303,6 +320,11 @@
                                         width: 100%;
                                     }
                                 }
+                            }
+                        }
+                        .section11 {
+                            &_2_box_sec:hover {
+                                border-radius: 0;
                             }
                         }
                         .aboutBanner {

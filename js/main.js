@@ -85,27 +85,27 @@ var swiper3 = new Swiper(".mySwiper3", {
 });
 var swiper4 = new Swiper(".mySwiper4", {
     loop: true,
-    slidesPerView: 1,
+    slidesPerView: 2,
     spaceBetween: 10,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    // },
     navigation: {
         nextEl: ".swiperbutton__Right",
         prevEl: ".swiperbutton__Left",
     },
     breakpoints: {
         640: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 20,
         },
         768: {
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: 40,
         },
         1024: {
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: 50,
         },
     },

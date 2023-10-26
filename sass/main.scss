@@ -217,7 +217,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-        height: 26rem;
+        // height: 26rem;
         width: 100%;
         background: linear-gradient(0deg, #000000 27.41%, rgba(28, 28, 28, 0) 87.24%);
     }
@@ -389,7 +389,7 @@
         width: fit-content;
         border: 2px solid #EB5939;
         color: #F6F6F6;
-        font-size: 20px;
+        font-size: 2rem;
         font-style: normal;
         font-weight: 600;
         line-height: 32px;
@@ -429,7 +429,7 @@
         &_body {
             color: #fff;
             p {
-                font-size: 12px;
+                font-size: 1.2rem;
                 line-height: 1.4;
             }
             h4 {
@@ -635,10 +635,10 @@
     }
     .section7e {
         position: absolute;
-        top: -10px;
+        top: -1rem;
         z-index: 0;
         display: flex;
-        gap: 8px;
+        gap: .8rem;
         span {
             position: relative;
             display: block;
@@ -746,6 +746,7 @@
             display: flex;
             width: fit-content;
             margin: 0 auto;
+            text-transform: uppercase;
         }
         p {
             text-align: center;
