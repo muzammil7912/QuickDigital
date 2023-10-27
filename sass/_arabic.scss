@@ -1,91 +1,201 @@
-body.arabic {
-    direction: rtl;
-    .header {
-        .languages {
-            left: 2%;
-            right: auto;
-        }
-        &topimg {
-            display: none;
-            left: auto;
-            right: 0;
-            transform: r4;
-        }
-    }
-    .banner {
-        &Txt {
-            left: auto;
-            right: 10%;
-        }
-        &Txt2 {
-            left: 10%;
-            right: auto;
-            span {
-                margin-right: 0;
-                margin-left: 0.7rem;
+    body.arabic {
+        direction: rtl;
+        .header {
+            .languages {
+                left: 2%;
+                right: auto;
             }
-            &__left {
+            &topimg {
+                display: none;
                 left: auto;
-                right: -3rem;
-            }
-            &img {
-                transform: rotate(180deg);
+                right: 0;
+                transform: r4;
             }
         }
-    }
-    .section3 {
-        &Main {
-            &2 {
-                .section3Main__right-img {
-                    position: absolute;
-                    left: 0;
-                    right: auto;
-                    transform: translateY(-8px);
+        .banner {
+            &Txt {
+                left: auto;
+                right: 10%;
+            }
+            &Txt2 {
+                left: 10%;
+                right: auto;
+                span {
+                    margin-right: 0;
+                    margin-left: 0.7rem;
                 }
-                .section3Main__left {
-                    text-align: left;
+                &__left {
+                    left: auto;
+                    right: -3rem;
+                }
+                &img {
+                    transform: rotate(180deg);
                 }
             }
         }
-    }
-    .section4 {
-        &__bottom {
-            &_img {
-                transform: rotate(180deg) rotateX(180deg);
+        .section3 {
+            &Main {
+                &2 {
+                    .section3Main__right-img {
+                        position: absolute;
+                        left: 0;
+                        right: auto;
+                        transform: translateY(-8px);
+                    }
+                    .section3Main__left {
+                        text-align: left;
+                    }
+                }
             }
         }
-    }
-    .box1 {
-        .triangle-arrow1 {
+        .section4 {
+            &__bottom {
+                &_img {
+                    transform: rotate(180deg) rotateX(180deg);
+                }
+            }
+        }
+        .box1 {
+            .triangle-arrow1 {
+                left: auto;
+                right: 120px;
+            }
+            .triangle-arrow2 {
+                left: auto;
+                right: 30px;
+            }
+        }
+        .box3 .triangle-arrow3 {
             left: auto;
-            right: 120px;
+            right: 71.5px;
         }
-        .triangle-arrow2 {
+        .triangle-arrow4 {
             left: auto;
             right: 30px;
         }
-    }
-    .box3 .triangle-arrow3 {
-        left: auto;
-        right: 71.5px;
-    }
-    .triangle-arrow4 {
-        left: auto;
-        right: 30px;
-    }
-    .boox {
-        margin: 0 1rem;
-    }
-    .section5 {
-        &Main {
-            &B {
-                &Img {
-                    .section5MainBo {
-                        right: auto;
-                        left: 0;
+        .boox {
+            margin: 0 1rem;
+        }
+        .section5 {
+            &Main {
+                &B {
+                    &Img {
+                        .section5MainBo {
+                            right: auto;
+                            left: 0;
+                        }
+                    }
+                    h4 {
+                        padding-left: 0;
+                        padding-right: 2rem;
+                        &::before {
+                            left: auto;
+                            right: 0;
+                        }
                     }
                 }
-                h4 {
+            }
+        }
+        .section9 {
+            &Main {
+                &__left {
+                    &-img2 {
+                        left: auto;
+                        right: -6rem;
+                    }
+                }
+            }
+        }
+        .section11_1 {
+            margin-left: 0;
+            margin-right: 10%;
+        }
+        .section11_2_text_box {
+            margin-left: 0;
+            margin-right: 4%;
+        }
+        .section11_2_dot {
+            left: auto;
+            right: 1.2%;
+        }
+        .section3 {
+            &Main {
+                &__left {
+                    border-left: 1px solid rgb(61, 61, 61);
+                    border-right: unset;
+                    ul {
+                        li {
+                            div {
+                                &::before {
+                                    right: -1.6rem;
+                                    left: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .aboutBanner {
+            &__left {
+                img {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        .sectionabout {
+            &Box2_ {
+                ul li {
+                    &::before {
+                        right: -30px;
+                        left: auto;
+                        transform: rotate(180deg) rotateX(180deg);
+                    }
+                }
+            }
+        }
+        .sectionbebek2discover {
+            &1 {
+                img {
+                    margin-left: 0;
+                    margin-right: 6.4rem;
+                }
+            }
+            &3 {
+                &img2 {
+                    right: auto;
+                    left: -20rem;
+                }
+            }
+        }
+        .blogInner {
+            &Main {
+                &Right {
+                    .searchBox_input {
+                        i {
+                            right: auto;
+                            left: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+        .sectionContact {
+            &__input {
+                label {
+                    left: auto;
+                    right: 4rem;
+                }
+                input:focus+label,
+                input:not(:placeholder-shown)+label {
+                    left: auto;
+                    right: 0;
+                }
+            }
+        }
+        .aboutBanner {
+            &__right {
+                h3 {
                     padding-left: 0;
                     padding-right: 2rem;
                     &::before {
@@ -95,112 +205,89 @@ body.arabic {
                 }
             }
         }
-    }
-    .section9 {
-        &Main {
-            &__left {
-                &-img2 {
-                    left: auto;
-                    right: -6rem;
-                }
-            }
-        }
-    }
-    .section11_1 {
-        margin-left: 0;
-        margin-right: 10%;
-    }
-    .section11_2_text_box {
-        margin-left: 0;
-        margin-right: 4%;
-    }
-    .section11_2_dot {
-        left: auto;
-        right: 1.2%;
-    }
-    .section3 {
-        &Main {
-            &__left {
-                border-left: 1px solid rgb(61, 61, 61);
-                border-right: unset;
-                ul {
-                    li {
-                        div {
-                            &::before {
-                                right: -1.6rem;
-                                left: auto;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .aboutBanner {
-        &__left {
-            img {
-                transform: rotate(180deg);
-            }
-        }
-    }
-    .sectionabout {
-        &Box2_ {
-            ul li {
+        .servicesInnerList {
+            li {
                 &::before {
-                    right: -30px;
                     left: auto;
+                    right: -3rem;
                     transform: rotate(180deg) rotateX(180deg);
                 }
             }
         }
-    }
-    .sectionbebek2discover {
-        &1 {
-            img {
-                margin-left: 0;
-                margin-right: 6.4rem;
-            }
+        .mySwiper3 {
+            direction: ltr;
+            text-align: right;
         }
-        &3 {
-            &img2 {
-                right: auto;
-                left: -20rem;
-            }
-        }
-    }
-    .blogInner {
-        &Main {
-            &Right {
-                .searchBox_input {
-                    i {
-                        right: auto;
-                        left: 1rem;
+        .footerMain {
+            &Box {
+                &last {
+                    .footerMainBox_2,
+                    .menulist2 {
+                        justify-content: flex-start;
                     }
                 }
             }
         }
-    }
-    .sectionContact {
-        &__input {
-            label {
-                left: auto;
-                right: 4rem;
+        .section5MainSwiper,
+        .mySwiper,
+        .section10Button {
+            direction: ltr;
+        }
+        .swiperbutton {
+            direction: ltr;
+        }
+        .section6 {
+            &__right {
+                direction: ltr;
             }
-            input:focus+label,
-            input:not(:placeholder-shown)+label {
-                left: auto;
-                right: 0;
+            &Main {
+                &Box {
+                    direction: rtl;
+                }
             }
         }
+        .section3Main2 {
+            .section3Main__left {
+                h6 {
+                    text-align: right;
+                }
+            }
+        }
+        .section3Main.section3Main2 {
+            text-align: right;
+        }
+        .mySwiper2 {
+            direction: ltr;
+        }
     }
-    .footerMain {
-        &Box {
-            &last {
-                .footerMainBox_2,
-                .menulist2 {
-                    justify-content: flex-start;
+    
+    @media screen and (max-width: 979px) {
+        body.arabic {
+            .header {
+                .languages {
+                    left: 16%;
+                }
+                &__center {
+                    padding-right: 0;
+                }
+            }
+            .section2 {
+                &__bottom {
+                    img {
+                        left: 6rem;
+                        right: auto;
+                    }
+                }
+            }
+            .banner {
+                &Txt {
+                    left: auto;
+                    right: 2%;
+                }
+                &Txt2 {
+                    left: 2%;
+                    right: auto;
                 }
             }
         }
     }
-}

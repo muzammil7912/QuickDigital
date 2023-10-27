@@ -145,14 +145,14 @@ function ResponsiveFunction() {
 
 
 
-$(".header__right-nav").click(function() {
+$(".header__right-nav").click(function () {
     $(".header__right").toggleClass("active");
 })
-$(document).on("click", ".closeIcon", function() {
+$(document).on("click", ".closeIcon", function () {
     $(".header__right").removeClass("active");
     $(".header__right li").removeClass("active");
 });
-$(document).on("click", ".header__right li", function() {
+$(document).on("click", ".header__right li", function () {
     $(this).addClass("active");
 });
 
@@ -160,11 +160,16 @@ $(document).on("click", ".header__right li", function() {
 
 // URL se "language" parameter ko get karne ka function
 function getLanguageParameter() {
-    // URL ko hasil karein
     var url = new URL(window.location.href);
-    // "language" parameter ko get karein
-    var language = url.searchParams.get("language");
-    return language;
+
+    var pathSegments = url.pathname.split('/');
+    var language = pathSegments[1];
+
+    if (language == 'ar') {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 // "language" parameter ko hasil karein
@@ -179,10 +184,10 @@ if (language) {
 
 // counter
 var a = 0;
-$(window).scroll(function() {
+$(window).scroll(function () {
     //var oTop = $('#counter').offset().top - window.innerHeight;
     // if (a == 0 && $(window).scrollTop() > oTop) {
-    $('.counter-value').each(function() {
+    $('.counter-value').each(function () {
         var $this = $(this),
             countTo = $this.attr('data-count');
         $({
@@ -192,10 +197,10 @@ $(window).scroll(function() {
         }, {
             duration: 2000,
             easing: 'swing',
-            step: function() {
+            step: function () {
                 $this.text(Math.floor(this.countNum));
             },
-            complete: function() {
+            complete: function () {
                 $this.text(this.countNum);
                 //alert('finished');
             }
@@ -264,12 +269,12 @@ $(window).scroll(function() {
 // })(jQuery);
 
 
-$(".section11_2_text_box2").click(function() {
+$(".section11_2_text_box2").click(function () {
     $(this).siblings(".section11_2_box_bottom").slideToggle();
 })
 
 
-$(window).on('scroll', function() {
+$(window).on('scroll', function () {
     if ($(this).scrollTop() > 100) {
         $('.header').addClass('go-top');
         // $('.logo_side').addClass('hide');

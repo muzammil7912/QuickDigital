@@ -4,7 +4,7 @@
         &img {
             position: relative;
             max-width: 100%;
-            min-height: 100vh;
+            max-height: 60rem;
         }
         &_ {
             position: absolute;
@@ -317,6 +317,7 @@
                         p {
                             line-height: 1.8;
                             margin-bottom: 3rem;
+                            font-size: 1.3rem;
                         }
                         .btn {
                             padding: 1rem 3rem;
@@ -791,7 +792,7 @@
         }
         &Img {
             position: relative;
-            top: -5rem;
+            top: -12rem;
             margin-bottom: -20rem;
             img {
                 width: 100%;
@@ -909,6 +910,7 @@
             font-size: 3rem;
             font-weight: 400;
             color: #8C8C8C;
+            line-height: 1.1;
             b,
             span {
                 color: #000;
@@ -1041,7 +1043,6 @@
             text-transform: uppercase;
             span {
                 color: $primary-color;
-                font-size: 6rem;
             }
         }
     }

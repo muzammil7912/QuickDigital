@@ -35,6 +35,7 @@
                         .section4 {
                             &__bottom {
                                 margin-left: 1.4rem;
+                                padding-top: 0;
                             }
                         }
                         .section5Main {
@@ -55,6 +56,7 @@
                             &_ {
                                 flex-direction: column;
                                 gap: 0;
+                                width: 98%;
                                 &_left {
                                     width: 100%;
                                     text-align: center;
@@ -65,9 +67,6 @@
                                     br {
                                         display: none;
                                     }
-                                }
-                                &_right {
-                                    display: none;
                                 }
                             }
                         }
@@ -145,7 +144,7 @@
                                     font-size: 3rem;
                                 }
                                 h2 {
-                                    font-size: 5em;
+                                    font-size: 5rem;
                                 }
                                 p {
                                     font-size: 1.6rem;
@@ -227,9 +226,47 @@
                                 }
                             }
                         }
+                        .sectionbebek2 {
+                            &Center3 {
+                                .img5 {
+                                    display: none;
+                                }
+                            }
+                        }
+                        .sectionprocess {
+                            background-size: cover;
+                        }
+                        .sectionservicesInner {
+                            &_ {
+                                grid-template-columns: 1fr;
+                            }
+                            h3 {
+                                font-size: 4rem;
+                            }
+                        }
+                        .aboutBanner {
+                            &_ {
+                                position: relative;
+                                padding-top: 10rem;
+                                top: 0 !important;
+                                left: 0 !important;
+                                transform: translateY(0%);
+                            }
+                            &img {
+                                display: none;
+                            }
+                        }
                     }
                     
                     @media screen and (max-width: 768px) {
+                        .sectionOutstandingMain2 {
+                            .vectorimg {
+                                width: 8rem;
+                            }
+                        }
+                        .portfolioBanner {
+                            padding: 8rem 1rem;
+                        }
                         .section7Main3 {
                             overflow: auto;
                         }
@@ -247,6 +284,48 @@
                         }
                         .section1.d-none {
                             display: block;
+                        }
+                        .sectionbebek2 {
+                            &Center {
+                                p {
+                                    font-size: 2.4rem;
+                                }
+                            }
+                        }
+                        .sectionbebek2 {
+                            &discover {
+                                flex-direction: column;
+                                &1 {
+                                    order: 2;
+                                    img {
+                                        display: none;
+                                    }
+                                    h3 {
+                                        br {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                                &3 {
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                        .sectionservicesInner2 {
+                            &Main {
+                                grid-template-columns: repeat(1, 1fr);
+                            }
+                        }
+                        .sectionservicesInner3 {
+                            padding: 0;
+                            h2 {
+                                font-size: 3.4rem;
+                            }
+                            h5 {
+                                font-size: 2.2rem;
+                            }
                         }
                     }
                     
@@ -332,7 +411,7 @@
                                 width: 90%;
                                 &_left {
                                     h2 {
-                                        font-size: 5rem;
+                                        font-size: 3rem;
                                     }
                                 }
                             }
@@ -434,5 +513,12 @@
                             left: 0;
                             margin: 0 auto;
                             width: 4rem;
+                        }
+                        .sectionbebek2 {
+                            &Center2 {
+                                span {
+                                    font-size: 4.7rem;
+                                }
+                            }
                         }
                     }

@@ -14,3 +14,17 @@
         color: #fff;
     }
 }
+
+.btn3 {
+    padding: 1rem 4rem;
+    border: 2px solid $primary-color;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border-radius: 4rem;
+    transition: .3s;
+    &:hover {
+        color: #fff;
+        background: linear-gradient(180deg, #EB5939 55.7%, #FE980E 100%, #FE980E 100%);
+        box-shadow: 0px 0px 0px 0px rgba(248, 131, 27, 0.25), 0px 4px 8px 0px rgba(248, 131, 27, 0.25), 0px 15px 15px 0px rgba(248, 131, 27, 0.21), 0px 35px 21px 0px rgba(248, 131, 27, 0.13), 0px 62px 25px 0px rgba(248, 131, 27, 0.04), 0px 96px 27px 0px rgba(248, 131, 27, 0.00);
+    }
+}
