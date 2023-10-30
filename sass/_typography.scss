@@ -109,12 +109,14 @@
 
 html {
     font-size: 62.5%;
-    font-size: 0.730vw;
+    font-size: 0.620vw;
     scroll-behavior: smooth;
 }
 
 @media screen and (max-width: 1600px) {
-    html {}
+    html {
+        font-size: 0.730vw;
+    }
     .mySwiper2 .swiper-slide-prev {
         left: -15rem;
     }
@@ -274,4 +276,8 @@ img {
 .dsdasdds::-webkit-scrollbar {
     width: 0.4rem;
     background-color: $secondary-color;
+}
+
+.mb-2 {
+    margin-bottom: 1rem;
 }

@@ -272,9 +272,11 @@
     .sectionBLog {
         padding: 6rem 0 20rem;
         &Main {
+            position: relative;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
+            z-index: 2;
             &Card {
                 &Img {
                     position: relative;
@@ -463,6 +465,9 @@
     
     .sectionSEO {
         padding: 10rem 0;
+        &Mai {
+            gap: 2rem;
+        }
         &Main {
             background: #fff;
             box-shadow: 0 0 10px #ddd;
@@ -475,6 +480,12 @@
                 align-items: center;
                 gap: 2rem;
                 &Box {
+                    &2 {
+                        margin-bottom: 2rem;
+                        img {
+                            height: 6rem;
+                        }
+                    }
                     span {
                         color: #868686;
                     }
@@ -489,9 +500,6 @@
                     color: #868686;
                 }
                 &_ {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    gap: 1rem 2rem;
                     margin-top: 1rem;
                     &BOx {
                         background: #FFEFE9;
@@ -500,6 +508,7 @@
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
+                        margin-bottom: 1rem;
                         span {
                             text-transform: capitalize;
                         }
